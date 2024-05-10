@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="juegoPokemon.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:juegoPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" Background="#FFD8D8D8">
+            <Button x:Name="btInicio" Content="Inicio" Width="300" Click="Button_Click" Height="94" BorderBrush="#FF1C0404">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/imgInicio.png" Stretch="Uniform" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btMisPokemon" Content="Mis Pokemon" Height="94" Width="300" Click="btMisPokemon_Click" BorderBrush="Black">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/imgMisPokemon.jpg" Stretch="Uniform" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btPokedex" Content="Pokedex" Height="88" Width="300" Click="btPokedex_Click" BorderBrush="#FF050000">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/imgPokedex.png" Stretch="Uniform" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btCombate" Content="Combate" Height="94" Width="300" Click="btCombate_Click" BorderBrush="#FF050000">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/imgCombate.jpg" Stretch="Uniform" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btAcercaDe" Content="Acerca de" Height="94" Width="300" Click="btAcercaDe_Click" BorderBrush="#FF050000">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/imgAcercaDe.png" Stretch="Uniform" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0">
+            <Grid HorizontalAlignment="Center" Width="1200" Height="950" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Assets/Fondos/imgFondoMainPage.jpg" Stretch="UniformToFill"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="250*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Realizada por: Juan de Dios Carrera y Víctor Felipe Jiménez" Grid.Row="3" Width="1198" Foreground="Black" FontWeight="Bold" FontSize="30" TextAlignment="Center" Height="56" VerticalAlignment="Top" Margin="0,20,0,0" />
+
+            </Grid>
+        </Frame>
+    </Grid>
+</Page>
