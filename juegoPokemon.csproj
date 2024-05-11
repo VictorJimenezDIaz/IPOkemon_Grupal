@@ -144,6 +144,9 @@
     <Compile Include="MisPokemonPage.xaml.cs">
       <DependentUpon>MisPokemonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PokeDexInfo.xaml.cs">
+      <DependentUpon>PokeDexInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PokedexPage.xaml.cs">
       <DependentUpon>PokedexPage.xaml</DependentUpon>
     </Compile>
@@ -164,10 +167,12 @@
     <Content Include="Assets\Garchomp\efectosVida.png" />
     <Content Include="Assets\Garchomp\escudoazul-removebg-preview.png" />
     <Content Include="Assets\Garchomp\forest.png" />
+    <Content Include="Assets\Garchomp\imgGarchompPokeDex.png" />
     <Content Include="Assets\Garchomp\pocionEnergiaTomando.png" />
     <Content Include="Assets\Garchomp\pocionVidaTomando.png" />
     <Content Include="Assets\Garchomp\sueño-removebg-preview.png" />
     <Content Include="Assets\Garchomp\zarpazo-removebg-preview.png" />
+    <Content Include="Assets\Gliscor\gliscor.jpg" />
     <Content Include="Assets\Gliscor\original.jpg" />
     <Content Include="Assets\imgAcercaDe.png" />
     <Content Include="Assets\imgCombate.jpg" />
@@ -215,6 +220,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MisPokemonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PokeDexInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

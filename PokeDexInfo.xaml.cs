@@ -20,29 +20,12 @@ namespace juegoPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class MisPokemonPage : Page
+    public sealed partial class PokeDexInfo : Page
     {
-        public MisPokemonPage()
+        public PokeDexInfo()
         {
             this.InitializeComponent();
         }
 
-        private void btGliscor_Click(object sender, RoutedEventArgs e)
-        {
-            // Crear un diccionario para almacenar el parámetro
-            var parameter = new Dictionary<string, object>();
-            parameter.Add("pokemonNombre", "Gliscor");
-
-            Frame.Navigate(typeof(PokeDexInfo), parameter);
-        }
-
-        private void btGarchomp_Click(object sender, RoutedEventArgs e)
-        {
-            // Crear un diccionario para almacenar el parámetro
-            var parameter = new Dictionary<string, object>();
-            parameter.Add("pokemonNombre", "Garchomp");
-
-            Frame.Navigate(typeof(PokeDexInfo), parameter);
-        }
     }
 }

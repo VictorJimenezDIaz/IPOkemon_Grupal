@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Fondos/imgFondoPokedexPage.png"/>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="733" Margin="975,314,0,0" VerticalAlignment="Top" Width="493" Source="/Assets/Gliscor/gliscor.jpg"/>
+
+        <Button x:Name="btGliscor" Content="Gliscor" Height="67" Margin="1125,760,0,0" VerticalAlignment="Top" Width="208" BorderBrush="White" Background="#330D00FF" FontSize="22" Click="btGliscor_Click"/>
+        <Button x:Name="btGarchomp" Content="Garchomp" Height="67" Margin="231,760,0,0" VerticalAlignment="Top" Width="208" BorderBrush="White" Background="#330D00FF" FontSize="22" Click="btGarchomp_Click"/>
+        <Image HorizontalAlignment="Left" Height="430" Margin="71,349,0,0" VerticalAlignment="Top" Width="498" Source="/Assets/Garchomp/imgGarchompPokeDex.png"/>
+        <TextBox HorizontalAlignment="Left" Margin="369,26,0,0" TextWrapping="Wrap" Text="Nuestros Pokemon" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Width="793" Height="105" FontSize="72" FontFamily="Franklin Gothic Heavy" FontWeight="Bold" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Page>

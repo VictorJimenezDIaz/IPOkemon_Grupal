@@ -12,6 +12,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Fondos/imgFondoPokedexPage.png" Stretch="UniformToFill"/>
         </Grid.Background>
+        <TextBox HorizontalAlignment="Left" Margin="285,23,0,0" TextWrapping="Wrap" Text="PokeDex IPOkemon" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Width="793" Height="105" FontSize="72" FontFamily="Franklin Gothic Heavy" FontWeight="Bold" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btPokemon1" Content="Button" Margin="212,238,0,0" VerticalAlignment="Top" Click="btPokemon1_Click"/>
 
     </Grid>
 </Page>
