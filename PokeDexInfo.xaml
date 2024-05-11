@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="juegoPokemon.PokeDexInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:juegoPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="451*"/>
+            <ColumnDefinition Width="1049*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Fondos/imgFondoPokedexPage.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBox x:Name="tbNombre" Margin="16,29,239,46" TextWrapping="Wrap" Text="Nombre Pokemon" Background="{x:Null}" Foreground="White" FontSize="72" FontFamily="Franklin Gothic Heavy" FontWeight="Bold" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="390" Margin="92,126,0,0" Grid.Row="1" VerticalAlignment="Top" Width="348"/>
+        <TextBox x:Name="tbDescripcion" HorizontalAlignment="Left" Margin="26,112,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Descripción" VerticalAlignment="Top" Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Franklin Gothic Heavy" FontWeight="Bold"/>
+        <TextBlock x:Name="tbDescripcion2" Grid.Column="1" HorizontalAlignment="Left" Margin="57,212,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Descripción" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <TextBox x:Name="tbCategoria" HorizontalAlignment="Left" Margin="512,114,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Categoría" VerticalAlignment="Top" Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Franklin Gothic Heavy" FontWeight="Bold"/>
+        <TextBlock x:Name="tbCategoria2" Grid.Column="1" HorizontalAlignment="Left" Margin="541,208,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Categoría" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <TextBox x:Name="tbTipo" HorizontalAlignment="Left" Margin="32,350,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top" Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Franklin Gothic Heavy" FontWeight="Bold"/>
+        <TextBlock x:Name="tbTipo2" Grid.Column="1" HorizontalAlignment="Left" Margin="51,446,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top" Width="300" FontSize="20"/>
+
+    </Grid>
+</Page>

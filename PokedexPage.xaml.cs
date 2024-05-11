@@ -26,5 +26,14 @@ namespace juegoPokemon
         {
             this.InitializeComponent();
         }
+
+        private void btPokemon1_Click(object sender, RoutedEventArgs e)
+        {
+            // Crear un diccionario para almacenar el parámetro
+            var parameter = new Dictionary<string, object>();
+            parameter.Add("pokemonNombre", "Pokemon1");
+
+            Frame.Navigate(typeof(PokeDexInfo), parameter);
+        }
     }
 }
